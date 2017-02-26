@@ -14,7 +14,7 @@ mvn clean install
 
 To run from the command line
 ```sh
-java -jar `ls -1 mediainfo-jni-*jar-with-dependencies.jar` [your file]
+java -jar `ls -1 mediainfo-jna-*jar-with-dependencies.jar` [your file]
 ```
 
 Currently tested on CentOS 7 and macOS Seirra.
