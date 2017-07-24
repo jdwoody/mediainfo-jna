@@ -1,0 +1,31 @@
+General
+Complete name                            : /some/path/to/a/file/vid.3gp
+Format                                   : MPEG-4
+Format profile                           : 3GPP Media Release 4
+Codec ID                                 : 3gp4 (isom/iso2/3gp4)
+File size                                : 500 KiB
+Overall bit rate                         : 256 kb/s
+Encoded date                             : UTC 1904-01-01 00:00:00
+Video
+ID                                       : 1
+Format                                   : H.263
+Format profile                           : BaseLine@1.0
+Codec ID                                 : s263
+Duration                                 : 5 s 534 ms
+Bit rate                                 : 478 kb/s
+Width                                    : 352 pixels
+Display aspect ratio                     : 16:9
+Frame rate                               : 30.000 FPS
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Compression mode                         : Lossy
+Stream size                              : 500 KiB (96%)
+Writing library                          : FFMpeg
+Tagged date                              : UTC 1904-01-01 00:00:00
+Audio
+ID                                       : 2
+Format                                   : AMR
+Format/Info                              : Adaptive Multi-Rate
+Format profile                           : Narrow band
