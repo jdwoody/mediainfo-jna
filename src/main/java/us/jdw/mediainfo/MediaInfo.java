@@ -8,7 +8,7 @@ import java.nio.channels.SeekableByteChannel;
 
 /**
  * Class to wrap calls to LibMediaInfo via JNA.
- * This class takes either a file path or an in memory byte[] and calls to 
+ * This class takes either a file path or a SeekableByteChannel and calls to 
  * LibMediaInfo to generate meta info. This class <b>must be closed</b>
  * to properly release Native resources. It implements <code>AutoCloseable</code> to allow
  * use try with resources.

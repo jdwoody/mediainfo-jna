@@ -10,13 +10,13 @@ import java.lang.reflect.Method;
 import static java.util.Collections.singletonMap;
 
 /**
- *
+ * JNA Wrapper for MediaInfo.
  */
 public interface LibMediaInfo extends Library {
     
     static final String LIB_NAME = "mediainfo";
     
-    LibMediaInfo INSTANCE = (LibMediaInfo) Native.loadLibrary(LIB_NAME, LibMediaInfo.class, singletonMap(OPTION_FUNCTION_MAPPER, (FunctionMapper) (NativeLibrary lib, Method method) -> "MediaInfo_" + method.getName()));
+    final LibMediaInfo INSTANCE = (LibMediaInfo) Native.loadLibrary(LIB_NAME, LibMediaInfo.class, singletonMap(OPTION_FUNCTION_MAPPER, (FunctionMapper) (NativeLibrary lib, Method method) -> "MediaInfo_" + method.getName()));
 
     
     /* Constructor */

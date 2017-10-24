@@ -5,6 +5,24 @@
     <artifactId>mediainfo-jna</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    
+    <name>MediaInfoLib JNA</name>
+    <description>JNA Wrapper for MediaInfo library</description>
+    <url>https://github.com/jdwoody/mediainfo-jna</url>
+ 
+    <licenses>
+        <license>
+            <name>BSD 2-Clause License</name>
+            <url>https://choosealicense.com/licenses/bsd-2-clause/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+ 
+    <scm>
+        <connection>scm:git:https://github.com/jdwoody/mediainfo-jna.git</connection>
+        <url>https://github.com/jdwoody/mediainfo-jna</url>
+    </scm>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -30,6 +48,32 @@
                         <phase>package</phase> <!-- bind to the packaging phase -->
                         <goals>
                             <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
